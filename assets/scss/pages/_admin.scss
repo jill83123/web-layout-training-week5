@@ -1,0 +1,31 @@
+.modal-body {
+
+    input[type="text"],
+    input[type="email"] {
+        height: 50px;
+    }
+
+    hr {
+        margin: 24px 0;
+    }
+}
+
+table {
+    tbody i {
+        margin-left: 25px;
+    }
+
+    td i:hover {
+        color: $primary;
+    }
+
+    tr {
+        cursor: pointer;
+    }
+}
+
+.info-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}

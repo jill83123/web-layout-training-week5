@@ -1,0 +1,58 @@
+
+
+.list {
+    width: 35%;
+
+    .list-group-item h3 {
+        max-width: 190px;
+    }
+}
+
+.content {
+    width: 63%;
+}
+
+.dropdown button {
+
+    &:hover {
+        filter: opacity(70%);
+    }
+}
+
+.card {
+    .card-text {
+        max-width: 96%;
+    }
+
+    .card-body {
+        .btn .material-icons {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+.profile-photo {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+//card-bottom-button
+.work {
+    margin: 22px 0;
+
+    .material-icons {
+        margin-right: 23px;
+    }
+}
+
+.ck-editor {
+    .edit-but {
+        margin: 0 24px 16px 0;
+    }
+
+    .ck-editor__editable[role="textbox"] {
+        /* editing area */
+        min-height: 280px;
+    }
+}

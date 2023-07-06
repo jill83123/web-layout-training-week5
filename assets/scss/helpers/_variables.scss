@@ -298,7 +298,7 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
+$primary:       $green ; //$blue !default; custom 
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -375,11 +375,15 @@ $spacer: 1rem !default;
 $spacers: (
   0: 0,
   1: $spacer * .25,
-  2: $spacer * .5,
+  2: $spacer * .5, 
   3: $spacer,
   4: $spacer * 1.5,
-  5: $spacer * 3,
-) !default;
+  5: $spacer * 3, 
+  6: $spacer * 2, //custom
+  7: $spacer * 4, //64
+  8: $spacer * 0.75, //12
+  9: $spacer * 0.375 //6
+) ; //!default;
 // scss-docs-end spacer-variables-maps
 
 // Position
@@ -581,7 +585,9 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $font-size-base * .75, //custom
+  8: $font-size-base * .875, //custom
 ) !default;
 // scss-docs-end font-sizes
 
@@ -1478,9 +1484,9 @@ $list-group-item-bg-scale:          -80% !default;
 $list-group-item-color-scale:       40% !default;
 
 $list-group-hover-bg:               $gray-100 !default;
-$list-group-active-color:           $component-active-color !default;
-$list-group-active-bg:              $component-active-bg !default;
-$list-group-active-border-color:    $list-group-active-bg !default;
+$list-group-active-color:           $gray-900; //$component-active-color !default; custom
+$list-group-active-bg:              $gray-100; //$component-active-bg !default;
+$list-group-active-border-color:    $gray-400; //$list-group-active-bg !default;
 
 $list-group-disabled-color:         $gray-600 !default;
 $list-group-disabled-bg:            $list-group-bg !default;

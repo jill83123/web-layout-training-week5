@@ -1,0 +1,32 @@
+.navbar {
+  max-width: 296px;
+
+  .nav-item {
+    margin-bottom: 23px;
+    padding-left: 32px;
+    padding-right: 132px;
+
+    &:hover {
+      background-color: $gray-400;
+    }
+
+    i {
+      margin-right: 19px;
+    }
+
+    .active,
+    .active i {
+      color: $primary!important;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background-color: $primary;
+      }
+    }
+  }
+}

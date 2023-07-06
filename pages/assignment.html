@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment</title>
+  <%- include('./layout/head-setting'); -%>
+</head>
+
+<body class="d-flex">
+
+  <%- include('./layout/navbar'); -%>
+
+    <main class="container g-7">
+      <header>
+        <nav class="nav align-items-center justify-content-between mt-6 mb-6">
+          <div class="d-flex align-items-center">
+            <h1 class="fs-4 fw-bold me-4 mb-0">Assignment</h1>
+            <div class="dropdown ms-4">
+              <button class="btn d-flex align-items-center btn-active-border-none" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="fw-bold fs-6">All Courses</span>
+                <i class="material-icons text-primary ms-3">expand_more</i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">HTML</a></li>
+                <li><a class="dropdown-item" href="#">CSS</a></li>
+                <li><a class="dropdown-item" href="#">Bootstrap 5</a></li>
+                <li><a class="dropdown-item" href="#">JavaScript</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center">
+            <a class="d-block lh-0" href="#"><i class="material-icons text-dark">search</i></a>
+            <a class="d-block ms-4 lh-0" href="#"><i class="material-icons text-dark">notifications_active</i></a>
+          </div>
+        </nav>
+      </header>
+
+      <section class="d-flex g-6 justify-content-between">
+        <!-- list -->
+        <div class="list">
+          <div class="dropdown">
+            <button class="btn d-flex align-items-center ps-0 pt-0 btn-active-border-none" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="fw-bold fs-6">All (4)</span>
+              <i class="material-icons text-primary ms-2">expand_more</i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Chapter Assignment 1 (1)</a></li>
+              <li><a class="dropdown-item" href="#">Chapter Assignment 2 (1)</a></li>
+              <li><a class="dropdown-item" href="#">Final Assignment (2)</a></li>
+            </ul>
+          </div>
+          <div class="list-group rounded-6" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action p-8 active" id="list-home-list" data-bs-toggle="list"
+              href="#list-home" role="tab" aria-controls="list-home">
+              <div class="d-flex justify-content-between fs-7">
+                <p class="mb-1">Chapter Assignment 2</p>
+                <span>4 hrs ago</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-end">
+                <h3 class="fs-6 fw-bold lh-base mb-0 text-truncate">Please check this file for me, thanks!</h3>
+                <p class="mb-0 fs-7 gray-600">Emily Wang</p>
+              </div>
+            </a>
+            <a class="list-group-item list-group-item-action p-8" id="list-profile-list" data-bs-toggle="list"
+              href="#list-profile" role="tab" aria-controls="list-profile">
+              <div class="d-flex justify-content-between fs-7">
+                <p class="mb-1">Chapter Assignment 1</p>
+                <span>4 hrs ago</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-end">
+                <h3 class="fs-6 fw-bold lh-base mb-0 text-truncate">My Homework</h3>
+                <p class="mb-0 fs-7 gray-600">Emily Wang</p>
+              </div>
+            </a>
+            <a class="list-group-item list-group-item-action p-8" id="list-messages-list" data-bs-toggle="list"
+              href="#list-messages" role="tab" aria-controls="list-messages">
+              <div class="d-flex justify-content-between fs-7">
+                <p class="mb-1">Final Assignment</p>
+                <span>4 hrs ago</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-end">
+                <h3 class="fs-6 fw-bold lh-base mb-0 text-truncate">Have a problem with this…</h3>
+                <p class="mb-0 fs-7 gray-600">Emily Wang</p>
+              </div>
+            </a>
+            <a class="list-group-item list-group-item-action p-8" id="list-settings-list" data-bs-toggle="list"
+              href="#list-settings" role="tab" aria-controls="list-settings">
+              <div class="d-flex justify-content-between fs-7">
+                <p class="mb-1">Final Assignment</p>
+                <span>4 hrs ago</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-end">
+                <h3 class="fs-6 fw-bold lh-base mb-0 text-truncate">Did I do it right?</h3>
+                <p class="mb-0 fs-7 gray-600">Emily Wang</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- content -->
+        <div class="content rounded-top">
+          <p class="text-end fs-7 gray-600 lh-lg mb-2">2 comments</p>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+              <!-- card -->
+              <div class="card rounded-6">
+                <div class="card-header pt-8 pb-8 ps-3 pe-3 d-flex justify-content-between align-items-center">
+                  <div>
+                    <p class="fs-7 mb-1">Chapter Assignment 2 / HTML&CSS</p>
+                    <h2 class="fs-6 fw-bold lh-base mb-0 text-truncate">Please check this file for me, thanks!</h2>
+                  </div>
+                  <a class="d-block link-dark" href="#">
+                    <i class="material-icons">more_vert</i>
+                  </a>
+                </div>
+
+                <div class="card-body pb-0">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="../assets/images/emilywang-cut.jpeg" class="profile-photo me-2" alt="profile-photo">
+                    <div>
+                      <p class="mb-0 fw-bold">Emily Wang</p>
+                      <span class="fs-7 gray-600 d-block">10:38 AM (4 hours ago)</span>
+                    </div>
+                  </div>
+                  <div class="ms-5 border-bottom">
+                    <p class="card-text fs-8">Hi Teacher, the attached file is my homework of chapter 2. And here comes
+                      a
+                      question: Why in the following code the height of the div is bigger than the height of the img ?
+                      There is a gap below the image, but it doesn’t seems to be a padding/margin.
+                      <br>
+                      What is the gap or extra space below image?
+                    </p>
+                    <a href="#" class="btn btn-light border rounded-6 pt-2 pb-2 mb-3" download="HW-2-David.zip">
+                      <div class="d-flex align-items-center">
+                        <i class="material-icons">attachment</i>
+                        HW-2-David.zip
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body pe-6">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center">
+                      <img src="../assets/images/andychen-cut.jpeg" class="profile-photo me-2" alt="profile-photo">
+                      <div>
+                        <p class="mb-0 fw-bold">Andy Chen (You)</p>
+                        <span class="fs-7 gray-600 d-block">13:24 AM (1 hours ago)</span>
+                      </div>
+                    </div>
+                    <div>
+                      <a class="" href="#"><i class="material-icons text-dark"
+                          style="font-family: 'Material Icons Outlined'">star_outline</i></a>
+                      <a class="ms-4" href="#"><i class="material-icons text-dark">edit</i></a>
+                    </div>
+                  </div>
+                  <div class="ms-5">
+                    <p class="card-text fs-8 mb-0">Hi David, by default, an image is rendered inline, like a letter so
+                      it
+                      sits on
+                      the same line that a, b, c and d sit on. There is space below that line for the descenders you
+                      find on letters like g, j, p and q.</p>
+                    <br>
+                    <p class="mb-0">You can:</p>
+                    <br>
+                    <ul>
+                      <li>
+                        adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the
+                        <code>middle</code> ) or
+                      </li>
+                      <li>
+                        change the <code>display</code> so it isn’t inline.
+                      </li>
+                      </ol>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+              <!-- card -->
+              <div class="card rounded-6">
+                <div class="card-header pt-8 pb-8 ps-3 pe-3 d-flex justify-content-between align-items-center">
+                  <div>
+                    <p class="fs-7 mb-1">Chapter Assignment 2 / HTML&CSS</p>
+                    <h2 class="fs-6 fw-bold lh-base mb-0 text-truncate">Please check this file for me, thanks!</h2>
+                  </div>
+                  <a class="d-block link-dark" href="#">
+                    <i class="material-icons">more_vert</i>
+                  </a>
+                </div>
+
+                <div class="card-body pb-0">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="../assets/images/emilywang-cut.jpeg" class="profile-photo me-2" alt="profile-photo">
+                    <div>
+                      <p class="mb-0 fw-bold">Emily Wang</p>
+                      <span class="fs-7 gray-600 d-block">10:38 AM (4 hours ago)</span>
+                    </div>
+                  </div>
+                  <div class="ms-5 border-bottom">
+                    <p class="card-text fs-8">123</p>
+                    <a href="#" class="btn btn-light border rounded-6 pt-2 pb-2 mb-3" download="HW-2-David.zip">
+                      <div class="d-flex align-items-center">
+                        <i class="material-icons">attachment</i>
+                        HW-2-David.zip
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body pe-6">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center">
+                      <img src="../assets/images/andychen-cut.jpeg" class="profile-photo me-2" alt="profile-photo">
+                      <div>
+                        <p class="mb-0 fw-bold">Andy Chen (You)</p>
+                        <span class="fs-7 gray-600 d-block">13:24 AM (1 hours ago)</span>
+                      </div>
+                    </div>
+                    <div>
+                      <a class="" href="#"><i class="material-icons text-dark"
+                          style="font-family: 'Material Icons Outlined'">star_outline</i></a>
+                      <a class="ms-4" href="#"><i class="material-icons text-dark">edit</i></a>
+                    </div>
+                  </div>
+                  <div class="ms-5">
+                    <p class="card-text fs-8 mb-0">123</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+              <!-- card -->
+              <div class="card rounded-6">
+                <div class="card-header pt-8 pb-8 ps-3 pe-3 d-flex justify-content-between align-items-center">
+                  <div>
+                    <p class="fs-7 mb-1">Chapter Assignment 2 / HTML&CSS</p>
+                    <h2 class="fs-6 fw-bold lh-base mb-0 text-truncate">Please check this file for me, thanks!</h2>
+                  </div>
+                  <a class="d-block link-dark" href="#">
+                    <i class="material-icons">more_vert</i>
+                  </a>
+                </div>
+
+                <div class="card-body pb-0">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="../assets/images/emilywang-cut.jpeg" class="profile-photo me-2" alt="profile-photo">
+                    <div>
+                      <p class="mb-0 fw-bold">Emily Wang</p>
+                      <span class="fs-7 gray-600 d-block">10:38 AM (4 hours ago)</span>
+                    </div>
+                  </div>
+                  <div class="ms-5 border-bottom">
+                    <p class="card-text fs-8">456</p>
+                    <a href="#" class="btn btn-light border rounded-6 pt-2 pb-2 mb-3" download="HW-2-David.zip">
+                      <div class="d-flex align-items-center">
+                        <i class="material-icons">attachment</i>
+                        HW-2-David.zip
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body pe-6">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center">
+                      <img src="../assets/images/andychen-cut.jpeg" class="profile-photo me-2" alt="profile-photo">
+                      <div>
+                        <p class="mb-0 fw-bold">Andy Chen (You)</p>
+                        <span class="fs-7 gray-600 d-block">13:24 AM (1 hours ago)</span>
+                      </div>
+                    </div>
+                    <div>
+                      <a class="" href="#"><i class="material-icons text-dark"
+                          style="font-family: 'Material Icons Outlined'">star_outline</i></a>
+                      <a class="ms-4" href="#"><i class="material-icons text-dark">edit</i></a>
+                    </div>
+                  </div>
+                  <div class="ms-5">
+                    <p class="card-text fs-8 mb-0">456</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+              <!-- card -->
+              <div class="card rounded-6">
+                <div class="card-header pt-8 pb-8 ps-3 pe-3 d-flex justify-content-between align-items-center">
+                  <div>
+                    <p class="fs-7 mb-1">Chapter Assignment 2 / HTML&CSS</p>
+                    <h2 class="fs-6 fw-bold lh-base mb-0 text-truncate">Please check this file for me, thanks!</h2>
+                  </div>
+                  <a class="d-block link-dark" href="#">
+                    <i class="material-icons">more_vert</i>
+                  </a>
+                </div>
+
+                <div class="card-body pb-0">
+                  <div class="d-flex align-items-center mb-3">
+                    <img src="../assets/images/emilywang-cut.jpeg" class="profile-photo me-2" alt="profile-photo">
+                    <div>
+                      <p class="mb-0 fw-bold">Emily Wang</p>
+                      <span class="fs-7 gray-600 d-block">10:38 AM (4 hours ago)</span>
+                    </div>
+                  </div>
+                  <div class="ms-5 border-bottom">
+                    <p class="card-text fs-8">789</p>
+                    <a href="#" class="btn btn-light border rounded-6 pt-2 pb-2 mb-3" download="HW-2-David.zip">
+                      <div class="d-flex align-items-center">
+                        <i class="material-icons">attachment</i>
+                        HW-2-David.zip
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body pe-6">
+                  <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="d-flex align-items-center">
+                      <img src="../assets/images/andychen-cut.jpeg" class="profile-photo me-2" alt="profile-photo">
+                      <div>
+                        <p class="mb-0 fw-bold">Andy Chen (You)</p>
+                        <span class="fs-7 gray-600 d-block">13:24 AM (1 hours ago)</span>
+                      </div>
+                    </div>
+                    <div>
+                      <a class="" href="#"><i class="material-icons text-dark"
+                          style="font-family: 'Material Icons Outlined'">star_outline</i></a>
+                      <a class="ms-4" href="#"><i class="material-icons text-dark">edit</i></a>
+                    </div>
+                  </div>
+                  <div class="ms-5">
+                    <p class="card-text fs-8 mb-0">789</p>
+                    <br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="work position-relative d-flex justify-content-between align-items-center">
+            <div>
+              <a href="#"><i class="material-icons text-dark">chevron_left</i></a>
+              <a href="#"><i class="material-icons text-dark">chevron_right</i></a>
+            </div>
+            <div>
+              <button type="button" class="btn btn-outline-primary fw-bold pt-2 pm-2 ps-6 pe-6 rounded-6">
+                Mark as read</button>
+              <button type="button" class="btn btn-primary fw-bold pt-2 pm-2 ps-6 pe-6 ms-3 rounded-6"
+                data-bs-toggle="collapse" data-bs-target="#collapseReply" aria-expanded="false"
+                aria-controls="collapseReply">Reply</button>
+            </div>
+            
+            <!-- ckEditor -->
+            <div class="ck-editor w-100 position-absolute bottom-0 collapse multi-collapse" id="collapseReply">
+              <textarea id="editor" placeholder="Reply an answer…"></textarea>
+              <div class="edit-but position-absolute bottom-0 end-0">
+                <button type="button" class="btn btn-outline-primary fw-bold pt-2 pm-2 ps-6 pe-6 ms-3 rounded-6"
+                  data-bs-toggle="collapse" data-bs-target="#collapseReply" aria-expanded="false"
+                  aria-controls="collapseReply">Cancel</button>
+                <button type="button" class="btn btn-primary fw-bold pt-2 pm-2 ps-6 pe-6 ms-2 rounded-6"
+                  data-bs-toggle="collapse" data-bs-target="#collapseReply" aria-expanded="false"
+                  aria-controls="collapseReply">Reply</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+    <script src="https://cdn.ckeditor.com/ckeditor5/38.1.0/classic/ckeditor.js"></script>
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>
